@@ -23,10 +23,12 @@ Para planificar este proyecto, nos conectaremos a AWS y crearemos unas VPC propi
 ### 5.1.- Diseño general
 Página Web donde gestionar los equipos de medida, y acceder a los datos qu éstos remiten de forma automática
 ### 5.2.- Diseño detallado
-En la página web se crean varios formularios (ampliables según las necesidades y requerimientos del cliente). Se definen formulario de alta de dispositivos, y en futuras ampliaciones se realizarán las bajas y modificaciones de los mismos
+En la página web se crean varios formularios (ampliables según las necesidades y requerimientos del cliente). Se definen formulario de alta de dispositivos, y en futuras ampliaciones se realizarán las bajas y modificaciones de los mismos.
+
 Se ha creado un formulario donde se simula la recepción de datos de los medidores, para poder realizar el listado de alguno de ellos.
 
 Formulario donde se listan todas las lecturas comunicadas por un determinado medidor.
+
 ## 6.- Implantación
 En primer lugar es necesario crear la infraestructura:
 - Máquina EC2 LAMP donde se alojará la página web
@@ -35,11 +37,14 @@ En primer lugar es necesario crear la infraestructura:
 - IP Elástica (18.233.3.187) asignada a la EC2
 - Grupo de seguridad para la EC2 con acceso por SSH (protegido por archivo de clave privada) y puerto 80 desde el exterior. La EC2 se ubica en una de las redes públicas
 - Grupo de seguridad para la RDS con acceso sólo desde el grupo de seguridad de la EC2. Con esto aislamos la BBDD del exterior, siendo imposible su conexión si no es a través de la EC2. La RDS se ubica en las redes privadas, como una Multi-AZ, aunque sin llegar a confiusrarla debido al elevado coste
+
 ## 7.- Recursos
+
 ### 7.1.- Herramientas hardware
 
 Las herramientas Hardware utilizadas para este proyecto han sido:
 - Equipo portatil
+- Infraestructura AWS (EC2 y RDS)
 
 ### 7.2.- Herramientas software
 
