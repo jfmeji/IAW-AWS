@@ -24,7 +24,8 @@ Para planificar este proyecto, nos conectaremos a AWS y crearemos unas VPC propi
 Página Web donde gestionar los equipos de medida, y acceder a los datos qu éstos remiten de forma automática
 ### 5.2.- Diseño detallado
 En la página web se crean varios formularios (ampliables según las necesidades y requerimientos del cliente). Se definen formulario de alta de dispositivos, y en futuras ampliaciones se realizarán las bajas y modificaciones de los mismos
-Se ha creado un formulario donde se simula la recepción de datos de los medidores, para poder realizar el listado de alguno de ellos
+Se ha creado un formulario donde se simula la recepción de datos de los medidores, para poder realizar el listado de alguno de ellos.
+
 Formulario donde se listan todas las lecturas comunicadas por un determinado medidor.
 ## 6.- Implantación
 En primer lugar es necesario crear la infraestructura:
