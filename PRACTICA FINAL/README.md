@@ -36,7 +36,7 @@ En primer lugar es necesario crear la infraestructura:
 - VPC propia (10.255.0.0/16) con cuatro subredes (Públicas A y B: 10.255.1.0/24 y 10.255.3.0/24 y Privadas A y B: 10.255.2.0/24 y 10.255.4.0/24)
 - IP Elástica (18.233.3.187) asignada a la EC2
 - Grupo de seguridad para la EC2 con acceso por SSH (protegido por archivo de clave privada) y puerto 80 desde el exterior. La EC2 se ubica en una de las redes públicas
-- Grupo de seguridad para la RDS con acceso sólo desde el grupo de seguridad de la EC2. Con esto aislamos la BBDD del exterior, siendo imposible su conexión si no es a través de la EC2. La RDS se ubica en las redes privadas, como una Multi-AZ, aunque sin llegar a confiusrarla debido al elevado coste
+- Grupo de seguridad para la RDS con acceso sólo desde el grupo de seguridad de la EC2. Con esto aislamos la BBDD del exterior, siendo imposible su conexión si no es a través de la EC2. La RDS se ubica en las redes privadas, como una Multi-AZ, aunque sin llegar a configurarla debido al elevado coste
 
 ## 7.- Recursos
 
